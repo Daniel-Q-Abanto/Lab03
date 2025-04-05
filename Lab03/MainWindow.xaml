@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="500">
+
+            <Button x:Name="Button_datatable" Content="Lista con DataTable" Height="30" Margin="0,10"
+                    Click="datatable_Click"/>
+
+            <Button x:Name="Button_datareader" Content="Lista con DataReader" Height="30" Margin="0,10"
+                    Click="datareader_Click"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <TextBox x:Name="txtSearch" Width="200" Height="25" Margin="0,0,10,0"/>
+                <Button x:Name="Button_search" Content="Buscar por Nombre" Width="150" Height="30"
+                        Click="search_Click"/>
+            </StackPanel>
+
+            <DataGrid x:Name="dataGrid" Height="200" Margin="0,20,0,0" AutoGenerateColumns="True"/>
+
+        </StackPanel>
 
     </Grid>
 </Window>
